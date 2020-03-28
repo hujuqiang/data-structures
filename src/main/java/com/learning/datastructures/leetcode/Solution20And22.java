@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Stack;
 
 /**
- * 给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。
+ * 20.给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。
  *
  * 有效字符串需满足：
  *
@@ -13,7 +13,7 @@ import java.util.Stack;
  * 左括号必须以正确的顺序闭合。
  * 注意空字符串可被认为是有效字符串。
  */
-public class Solution {
+public class Solution20And22 {
 
     public boolean isValid(String s) {
         Stack<Character> stack = new java.util.Stack<Character>();
@@ -41,7 +41,7 @@ public class Solution {
     }
 
     /**
-     * 给出 n 代表生成括号的对数，请你写出一个函数，使其能够生成所有可能的并且有效的括号组合。
+     * 22.给出 n 代表生成括号的对数，请你写出一个函数，使其能够生成所有可能的并且有效的括号组合。
      *
      * 例如，给出 n = 3，生成结果为：
      *
@@ -78,7 +78,7 @@ public class Solution {
     public static void main(String[] args) {
         /*System.out.println((new Solution()).isValid("()[]{}"));
         System.out.println((new Solution()).isValid("([)]"));*/
-        List<String> list = new Solution().generateParenthesis(3);
+        List<String> list = new Solution20And22().generateParenthesis(3);
         for(String s : list) {
             System.out.println(s);
         }
