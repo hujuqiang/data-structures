@@ -60,7 +60,7 @@ public class MaxHeap<E extends Comparable<E>> {
      * @param index
      * @return
      */
-    private int rightCHild(int index) {
+    private int rightChild(int index) {
         return 2 * index + 2;
     }
 
@@ -136,4 +136,5 @@ public class MaxHeap<E extends Comparable<E>> {
             }
         }*/
     }
+    
 }
